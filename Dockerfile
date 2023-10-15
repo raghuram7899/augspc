@@ -4,4 +4,4 @@ ADD https://github.com/nopSolutions/nopCommerce/releases/download/release-4.60.4
 ENV ASPNETCORE_URLS="http://0.0.0.0:5000"
 EXPOSE 5000
 WORKDIR /nopCommerce
-CMD ["dotnet", "Nop.Web.dll"]
+CMD ["dotnet", "Nop.Web.dll" ""http://0.0.0.0:5000""]
